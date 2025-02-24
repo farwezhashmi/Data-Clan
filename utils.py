@@ -5,7 +5,7 @@ import wikipediaapi
 def configure_gemini():
     """Initialize and configure Gemini API."""
     try:
-        api_key = st.secrets["AIzaSyAxFUkU6Rp_GmiEPgHnKjLV1hPVKfh0k3A"]  # Ensure this matches secrets.toml
+        api_key = st.secrets["your_api_key"]  # replace with your api
         genai.configure(api_key=api_key)
         return genai.GenerativeModel('gemini-1.5')
     except KeyError:
