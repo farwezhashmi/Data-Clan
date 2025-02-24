@@ -50,7 +50,7 @@ if uploaded_file:
 
 """def configure_gemini():
     try:
-        api_key = st.secrets#["AIzaSyBz8gamex4PivYRLIPk1AYbVnlIvRflS3I"]  # Ensure this matches the key in secrets.toml
+        api_key = st.secrets#["your_api_key"]  # Ensure this matches the key in secrets.toml
         genai.configure(api_key=api_key)
         return genai.GenerativeModel('gemini-pro-vision')
     except Exception as e:
